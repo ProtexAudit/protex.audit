@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PROTEX - Smart Contract Scanner</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<header>
+  <h1 class="logo">Protex</h1>
+</header>
+
+<section class="scanner">
+  <h2>Multi-Chain Smart Contract Security Scanner</h2>
+
+  <select id="chain">
+    <option value="ethereum">Ethereum</option>
+    <option value="bsc">BSC</option>
+    <option value="polygon">Polygon</option>
+    <option value="arbitrum">Arbitrum</option>
+    <option value="avalanche">Avalanche</option>
+  </select>
+
+  <input type="text" id="address" placeholder="Enter token contract address">
+  <button onclick="scan()">Analyze</button>
+</section>
+
+<section id="result"></section>
+
+<canvas id="chart"></canvas>
+
+<script src="app.js"></script>
+</body>
+</html>
