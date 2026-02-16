@@ -1,19 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>PROTEX - Smart Contract Scanner</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PROTEX | Multi-Chain Smart Contract Scanner</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
+
 <body>
 
 <header>
-  <h1 class="logo">Protex</h1>
+  <div class="logo">Protex</div>
 </header>
 
-<section class="scanner">
-  <h2>Multi-Chain Smart Contract Security Scanner</h2>
+<section class="hero">
+  <h1>Professional Multi-Chain Smart Contract Intelligence</h1>
+  <p>
+    PROTEX is a secure, transparent, and data-driven platform designed to analyze
+    crypto token contracts across multiple blockchains. 
+    We provide liquidity insight, holder metrics, live price charts,
+    and AI-based risk evaluation to help users make safer decisions.
+  </p>
+</section>
 
+<section class="scanner">
   <select id="chain">
     <option value="ethereum">Ethereum</option>
     <option value="bsc">BSC</option>
@@ -22,13 +33,19 @@
     <option value="avalanche">Avalanche</option>
   </select>
 
-  <input type="text" id="address" placeholder="Enter token contract address">
-  <button onclick="scan()">Analyze</button>
+  <input type="text" id="address" placeholder="Enter contract address">
+  <button onclick="scan()">Analyze Contract</button>
 </section>
 
-<section id="result"></section>
+<section id="results"></section>
 
-<canvas id="chart"></canvas>
+<div class="chart-container">
+  <canvas id="priceChart"></canvas>
+</div>
+
+<footer>
+  © 2026 PROTEX — Smart Contract Intelligence Protocol
+</footer>
 
 <script src="app.js"></script>
 </body>
