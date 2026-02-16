@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  background: #0b0b0b;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  padding: 20px;
+}
+
+.logo {
+  color: gold;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.scanner {
+  text-align: center;
+  margin-top: 50px;
+}
+
+input, select {
+  padding: 12px;
+  width: 300px;
+  background: #1a1a1a;
+  border: 1px solid gold;
+  color: white;
+  margin: 10px;
+}
+
+button {
+  padding: 12px 20px;
+  background: gold;
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#result {
+  margin-top: 40px;
+  padding: 20px;
+}
