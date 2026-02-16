@@ -1,44 +1,72 @@
 body {
   margin: 0;
-  background: #0b0b0b;
+  background: #0d0d0d;
   color: white;
   font-family: Arial, sans-serif;
 }
 
 header {
-  padding: 20px;
+  padding: 20px 40px;
 }
 
 .logo {
-  color: gold;
-  font-size: 24px;
+  color: #d4af37;
+  font-size: 22px;
   font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.hero {
+  text-align: center;
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.hero h1 {
+  color: #d4af37;
 }
 
 .scanner {
   text-align: center;
-  margin-top: 50px;
+  margin: 30px 0;
 }
 
-input, select {
+select, input {
   padding: 12px;
-  width: 300px;
-  background: #1a1a1a;
-  border: 1px solid gold;
-  color: white;
   margin: 10px;
+  width: 280px;
+  background: #1a1a1a;
+  border: 1px solid #d4af37;
+  color: white;
 }
 
 button {
   padding: 12px 20px;
-  background: gold;
-  color: black;
+  background: #d4af37;
   border: none;
-  cursor: pointer;
+  color: black;
   font-weight: bold;
+  cursor: pointer;
 }
 
-#result {
-  margin-top: 40px;
-  padding: 20px;
+button:hover {
+  opacity: 0.9;
 }
+
+#results {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.chart-container {
+  width: 80%;
+  margin: 40px auto;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #777;
+}
+
